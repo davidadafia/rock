@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rock</title>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>ROCK SOLUTIONS</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
   <%= stylesheet_link_tag    "/assets/grayscale.css" %>
-
   <%= stylesheet_link_tag    "/assets/bootstrap.css" %>
+
 </head>
 <body>
 
@@ -19,8 +24,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">ROCK SOLUTIONS</span>
+                <a class="navbar-brand" href="/homes/index">
+                     <span class="light">ROCK SOLUTIONS</span>
                 </a>
             </div>
 
@@ -32,10 +37,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <%= link_to 'ABOUT',homes_index_path %>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <%= link_to 'SERVICES',services_index_path %>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -55,18 +60,18 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-sm-4">
                         <h3>Location</h3>
                         <p>P.O.Box AN 16646
                             <br>Accra North Ghana</p>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-sm-4">
                         <h3>Contact Us</h3>
                         <p>0277648388
-                            <br>consultlamp@gmail.com</p>
+                            <br>rocksolutions@gmail.com</p>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Connect With Us</h3>
+                    <div class="footer-col col-sm-4">
+                        <h3>Social Media</h3>
                         <ul class="list-inline">
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
